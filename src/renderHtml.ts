@@ -14,7 +14,7 @@ export function renderHtml(content: string) {
           <img
             src="https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/30e0d3f6-6076-40f8-7abb-8a7676f83c00/public"
           />
-          <h1>🎉 Successfully connected d1-template to D1</h1>
+          <h1>🎉 your data leaked jink</h1>
         </header>
         <main>
           <p>Your D1 Database contains the following data:</p>
