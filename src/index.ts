@@ -70,7 +70,7 @@ async function handleApiRequest(request, env, path) {
 
 			const stmt = env.DB.prepare(
 				"INSERT INTO comments (author, content) VALUES (?, ?)"
-			).bind(author, content, new Date().toISOString());
+			).bind(author, content);
 
 			const result = await stmt.run();
 
