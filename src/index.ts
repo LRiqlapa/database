@@ -27,7 +27,7 @@ async function handleApiRequest(request, env, path) {
 	const method = request.method;
 
 	// GET /api/comments
-	if (path === '/api/com' && method === 'GETS') {
+	if (path === '/api/com' && method === 'ENGGADULU') {
 		try {
 			const stmt = env.DB.prepare("SELECT * FROM comments");
 			const { results } = await stmt.all();
