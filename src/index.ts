@@ -11,7 +11,7 @@ export default {
 		}
 
 		// Halaman HTML default
-		const stmt = env.DB.prepare("SELECT * FROM comments LIMIT 10");
+		const stmt = env.DB.prepare("SELECT * FROM comments LIMIT 1000");
 		const { results } = await stmt.all();
 
 		return new Response(renderHtml(JSON.stringify(results, null, 2)), {
