@@ -27,7 +27,7 @@ async function handleApiRequest(request, env, path) {
 	const method = request.method;
 
 	// GET /api/comments
-	if (path === '/api/comments' && method === 'GET') {
+	if (path === '/api/com' && method === 'GET') {
 		try {
 			const stmt = env.DB.prepare("SELECT * FROM comments");
 			const { results } = await stmt.all();
@@ -53,7 +53,7 @@ async function handleApiRequest(request, env, path) {
 	}
 
 	// POST /api/comments
-	if (path === '/api/comments' && method === 'POST') {
+	if (path === '/api/com' && method === 'POST') {
 		try {
 			const body = await request.json();
 			const { author, content } = body;
@@ -96,7 +96,7 @@ async function handleApiRequest(request, env, path) {
 	}
 
 	// DELETE /api/comments/:id
-	if (path.startsWith('/api/comments/') && method === 'DELETE') {
+	if (path.startsWith('/api/com/') && method === 'DELETE') {
 		try {
 			const id = path.split('/')[3];
 			
