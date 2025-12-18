@@ -5,6 +5,12 @@ CREATE TABLE IF NOT EXISTS comments (
     content TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS example (
+    id INTEGER PRIMARY KEY NOT NULL,
+    massage TEXT NOT NULL,
+    content TEXT NOT NULL
+);
+
 -- Insert some sample data into our comments table.
 INSERT INTO comments (author, content)
 VALUES
